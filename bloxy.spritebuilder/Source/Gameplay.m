@@ -13,6 +13,18 @@
     CCNode *_sky1;
     CCNode *_sky2;
     NSArray *_skys;
+    CCNode *_cloud1;
+    CCNode *_cloud2;
+    CCNode *_cloud3;
+    CCNode *_cloud4;
+    CCNode *_cloud5;
+    CCNode *_cloud6;
+    CCNode *_cloud7;
+    CCNode *_cloud8;
+    CCNode *_cloud9;
+    CCNode *_cloud10;
+    CCNode *_cloud11;
+    NSArray *_clouds;
     
     //CCNode *_levelNode;
     
@@ -33,6 +45,7 @@
     self.scrollingCoeficcientIncrease =1.1;
     
     _skys = @[_sky1, _sky2];
+    _clouds = @[_cloud1, _cloud2, _cloud3, _cloud4, _cloud5, _cloud6, _cloud7,_cloud8,_cloud9, _cloud10, _cloud11];
     
     
 }
@@ -77,6 +90,20 @@
         // if the bottom corner is one complete width off the screen, move it to the top
         if (skyScreenPosition.y <= (-1 * sky.contentSize.height)) {
             sky.position = ccp(sky.position.x, sky.position.y + 2 * sky.contentSize.height);
+        }
+    }
+    // loop the clouds
+    for (CCNode *cloud in _clouds) {
+//        NSInteger rx = arc4random() % 10;
+//        NSInteger ry = arc4random() % 30;
+        // get the world position
+        CGPoint cloudWorldPosition = [_thePhysicsNode convertToWorldSpace:cloud.position];
+        // get the screen position
+        CGPoint cloudScreenPosition = [self convertToNodeSpace:cloudWorldPosition];
+        // if the bottom corner is one complete sky-width off the screen, move it to the top
+        if (cloudScreenPosition.y <= (-1 * _thePhysicsNode.contentSize.height)) {
+//            cloud.position = ccp(cloud.position.x + (rx - 5), _thePhysicsNode.position.y + 2 * _thePhysicsNode.contentSize.height + (ry - 15));
+            cloud.position = ccp(cloud.position.x, _thePhysicsNode.position.y + 2 * _thePhysicsNode.contentSize.height);
         }
     }
 }
