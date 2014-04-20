@@ -9,7 +9,10 @@
 #import "BlockScroller.h"
 
 
+
 @implementation BlockScroller
+
+
 
 - (void)didLoadFromCCB {
     self.userInteractionEnabled = TRUE;
@@ -17,23 +20,38 @@
 
 - (void)onEnter {
     [super onEnter];
-    
-    miniBlockArray = [[NSMutableArray alloc] init];
-    NSInteger xPos = self.boundingBox.size.width +20;
-    NSInteger xOffset= 50;
-    
-    for (int i=0; i<5; i++) {
-        xPos = (i * -xOffset);
-        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
-          miniBlock.position = ccp(xPos,(self.boundingBox.size.height/2)-5);
-        [miniBlockArray addObject:miniBlock];
-    }
-    
-    for (MiniBlock* mb in miniBlockArray){
-        [self addChild:mb];
-    }
+    self.spacing = 10;
+//    miniBlockArray = [[NSMutableArray alloc] init];
+//    NSInteger xPos = self.boundingBox.size.width +20;
+//    NSInteger xOffset= 50;
+//    CCLOG(@"%f",self.boundingBox.size.width );
+//    
+//    for (int i=0; i<5; i++) {
+//        xPos = (i * -xOffset);
+//        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
+//          miniBlock.position = ccp(xOffset,(self.boundingBox.size.height/2)-5);
+//        [miniBlockArray addObject:miniBlock];
+//    }
+//    
+//    for (MiniBlock* mb in miniBlockArray){
+//        [self addChild:mb];
+//    }
 
+    for (int i=0; i<10; i++) {
+        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
+        [self addChild:miniBlock];
+    }
   
 }
 
+-(void) removeBlock{
+    
+}
+
+-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    CGPoint pos = [touch locationInNode:self];
+    CCLOG(@"%f", pos.x);
+    
+}
 @end

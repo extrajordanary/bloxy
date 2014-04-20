@@ -10,9 +10,14 @@
 #import "cocos2d.h"
 #import "MiniBlock.h"
 
+
+
 @interface BlockScroller : CCLayoutBox {
     NSMutableArray *miniBlockArray;
     
+
 }
+@property (nonatomic,assign) float spacing;
+
 
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D4D355E19036DD40040E81A /* BlockScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D355D19036DD40040E81A /* BlockScroller.m */; };
 		3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D356019036F9E0040E81A /* MiniBlock.m */; };
+		3D8679DA1903B2DF00AE8DBE /* LevelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8679D91903B2DF00AE8DBE /* LevelData.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
 		B71F5913188484E7003F4D28 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
@@ -61,6 +62,8 @@
 		3D4D355D19036DD40040E81A /* BlockScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlockScroller.m; path = Source/BlockScroller.m; sourceTree = "<group>"; };
 		3D4D355F19036F9E0040E81A /* MiniBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniBlock.h; sourceTree = "<group>"; };
 		3D4D356019036F9E0040E81A /* MiniBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniBlock.m; sourceTree = "<group>"; };
+		3D8679D81903B2DF00AE8DBE /* LevelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelData.h; sourceTree = "<group>"; };
+		3D8679D91903B2DF00AE8DBE /* LevelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelData.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 			children = (
 				3D4D355C19036DD40040E81A /* BlockScroller.h */,
 				3D4D355D19036DD40040E81A /* BlockScroller.m */,
+				3D8679D81903B2DF00AE8DBE /* LevelData.h */,
+				3D8679D91903B2DF00AE8DBE /* LevelData.m */,
 				3D4D355F19036F9E0040E81A /* MiniBlock.h */,
 				3D4D356019036F9E0040E81A /* MiniBlock.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8679DA1903B2DF00AE8DBE /* LevelData.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */,

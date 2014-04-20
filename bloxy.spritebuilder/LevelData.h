@@ -10,4 +10,10 @@
 
 @interface LevelData : NSObject
 
+@property (nonatomic, strong) NSMutableArray *blockArray;
+@property float firstGoalHeight;
+@property float secondGoalHeight;
+@property float thirdGoalHeight;
+
+
 @end
