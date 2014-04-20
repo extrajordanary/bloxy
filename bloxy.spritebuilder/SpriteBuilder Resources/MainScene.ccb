@@ -197,9 +197,9 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
-							<real>1</real>
-							<false/>
+							<real>0.89999997615814209</real>
+							<real>0.89999997615814209</real>
+							<true/>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -377,11 +377,11 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>199.4649658203125</real>
-							<real>170.53257751464844</real>
+							<real>0.5</real>
+							<real>0.30023342370986938</real>
 							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
+							<integer>2</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -680,8 +680,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -763,15 +761,43 @@
 			<key>centeredOrigin</key>
 			<false/>
 			<key>ext</key>
-			<string>tablet phonehd</string>
+			<string>phone</string>
 			<key>height</key>
 			<integer>568</integer>
 			<key>name</key>
-			<string>Fixed Portrait</string>
+			<string>Phone Portrait</string>
+			<key>scale</key>
+			<real>1</real>
+			<key>width</key>
+			<integer>320</integer>
+		</dict>
+		<dict>
+			<key>centeredOrigin</key>
+			<false/>
+			<key>ext</key>
+			<string>tablet phonehd</string>
+			<key>height</key>
+			<integer>512</integer>
+			<key>name</key>
+			<string>Tablet Portrait</string>
 			<key>scale</key>
 			<real>2</real>
 			<key>width</key>
 			<integer>384</integer>
+		</dict>
+		<dict>
+			<key>centeredOrigin</key>
+			<false/>
+			<key>ext</key>
+			<string>phone</string>
+			<key>height</key>
+			<integer>480</integer>
+			<key>name</key>
+			<string>iPhone Portrait (short)</string>
+			<key>scale</key>
+			<real>1</real>
+			<key>width</key>
+			<integer>320</integer>
 		</dict>
 	</array>
 	<key>sequences</key>
@@ -814,6 +840,6 @@
 		</dict>
 	</array>
 	<key>stageBorder</key>
-	<integer>3</integer>
+	<integer>0</integer>
 </dict>
 </plist>

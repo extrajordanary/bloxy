@@ -268,44 +268,6 @@
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>0</integer>
-						<key>physicsBody</key>
-						<dict>
-							<key>affectedByGravity</key>
-							<true/>
-							<key>allowsRotation</key>
-							<true/>
-							<key>bodyShape</key>
-							<integer>0</integer>
-							<key>cornerRadius</key>
-							<real>0.0</real>
-							<key>density</key>
-							<real>1</real>
-							<key>dynamic</key>
-							<true/>
-							<key>elasticity</key>
-							<real>0.30000001192092896</real>
-							<key>friction</key>
-							<real>0.30000001192092896</real>
-							<key>points</key>
-							<array>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-								<array>
-									<real>0.0</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>0.0</real>
-								</array>
-							</array>
-						</dict>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -414,44 +376,6 @@
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>0</integer>
-						<key>physicsBody</key>
-						<dict>
-							<key>affectedByGravity</key>
-							<true/>
-							<key>allowsRotation</key>
-							<true/>
-							<key>bodyShape</key>
-							<integer>0</integer>
-							<key>cornerRadius</key>
-							<real>0.0</real>
-							<key>density</key>
-							<real>1</real>
-							<key>dynamic</key>
-							<true/>
-							<key>elasticity</key>
-							<real>0.30000001192092896</real>
-							<key>friction</key>
-							<real>0.30000001192092896</real>
-							<key>points</key>
-							<array>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-								<array>
-									<real>0.0</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>0.0</real>
-								</array>
-							</array>
-						</dict>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -560,44 +484,6 @@
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>0</integer>
-						<key>physicsBody</key>
-						<dict>
-							<key>affectedByGravity</key>
-							<true/>
-							<key>allowsRotation</key>
-							<true/>
-							<key>bodyShape</key>
-							<integer>0</integer>
-							<key>cornerRadius</key>
-							<real>0.0</real>
-							<key>density</key>
-							<real>1</real>
-							<key>dynamic</key>
-							<true/>
-							<key>elasticity</key>
-							<real>0.30000001192092896</real>
-							<key>friction</key>
-							<real>0.30000001192092896</real>
-							<key>points</key>
-							<array>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-								<array>
-									<real>0.0</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>0.0</real>
-								</array>
-							</array>
-						</dict>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -706,44 +592,6 @@
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>0</integer>
-						<key>physicsBody</key>
-						<dict>
-							<key>affectedByGravity</key>
-							<true/>
-							<key>allowsRotation</key>
-							<true/>
-							<key>bodyShape</key>
-							<integer>0</integer>
-							<key>cornerRadius</key>
-							<real>0.0</real>
-							<key>density</key>
-							<real>1</real>
-							<key>dynamic</key>
-							<true/>
-							<key>elasticity</key>
-							<real>0.30000001192092896</real>
-							<key>friction</key>
-							<real>0.30000001192092896</real>
-							<key>points</key>
-							<array>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-								<array>
-									<real>0.0</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>50</real>
-								</array>
-								<array>
-									<real>50</real>
-									<real>0.0</real>
-								</array>
-							</array>
-						</dict>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -956,20 +804,20 @@
 							<key>points</key>
 							<array>
 								<array>
-									<real>1</real>
-									<real>0.0</real>
+									<real>1.093711256980896</real>
+									<real>73.253074645996094</real>
 								</array>
 								<array>
-									<real>384.15859985351562</real>
-									<real>1.4162108898162842</real>
+									<real>1.2174613475799561</real>
+									<real>7.5474300384521484</real>
 								</array>
 								<array>
-									<real>383.70370483398438</real>
-									<real>101.16092681884766</real>
+									<real>320.02005004882812</real>
+									<real>6.4843049049377441</real>
 								</array>
 								<array>
-									<real>2.0692212581634521</real>
-									<real>102.58392333984375</real>
+									<real>319.45193481445312</real>
+									<real>73.753700256347656</real>
 								</array>
 							</array>
 						</dict>
@@ -1007,7 +855,7 @@
 									<real>1</real>
 									<real>75</real>
 									<integer>2</integer>
-									<integer>0</integer>
+									<integer>1</integer>
 								</array>
 							</dict>
 							<dict>
@@ -1433,8 +1281,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>203.04695129394531</real>
-									<real>489.70147705078125</real>
+									<real>203.33494567871094</real>
+									<real>327.84542846679688</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -1698,9 +1546,9 @@
 						<key>value</key>
 						<array>
 							<real>1</real>
-							<real>510</real>
+							<real>0.89999997615814209</real>
 							<integer>2</integer>
-							<integer>1</integer>
+							<integer>2</integer>
 						</array>
 					</dict>
 					<dict>
@@ -2201,7 +2049,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>1.6666666269302368</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
