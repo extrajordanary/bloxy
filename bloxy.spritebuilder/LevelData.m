@@ -20,6 +20,7 @@
     self = [super init];
     if (self)
     {
+        self.blockArray = [NSMutableArray array];
         //_blockArraySize = 5;
         for (int i =0; i<5; i++)
         {
@@ -36,12 +37,12 @@
 
 -(void) addBlock
 {
-   // NSInteger r = arc4random() % 5;
+    NSInteger r = arc4random() % 5;
     //[_blockArray addObject:r];
-    /*
+    
     switch (r) {
         case 1: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"BigRect"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"RectBig"];
             [_blockArray addObject:block];
             break;
         }
@@ -69,17 +70,22 @@
             
         default:
             break;
-     */
-    //}
+     
+    }
     
 }
-/*
+
 -(CCSprite*) popBlock
 {
-   // CCSprite *sprite = [_blockArray objectAtIndex:[_blockArray lastObject]];
-    CCSprite *sprite = (CCSprite *)[CCBReader load:@"SquareSm"];
-    NSLog(@"%@" ,sprite);
+    CCSprite *sprite = [_blockArray firstObject];
+    [_blockArray removeObjectAtIndex:0];
+    while (_blockArray.count < 4)
+    [self addBlock];
+    //CCSprite *sprite = (CCSprite *)[CCBReader load:@"SquareSm"];
+    
+    NSLog(@"%i" ,_blockArray.count);
     return sprite;
-}*/
+    
+}
 
 @end
