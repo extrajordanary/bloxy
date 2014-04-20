@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "MiniBlock.h"
+#import "LevelData.h"
 
 
 
@@ -18,6 +18,6 @@
 
 }
 @property (nonatomic,assign) float spacing;
-
+@property (nonatomic) LevelData* levelData;
 
 @end

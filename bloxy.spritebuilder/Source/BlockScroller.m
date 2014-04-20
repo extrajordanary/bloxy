@@ -37,10 +37,10 @@
 //        [self addChild:mb];
 //    }
 
-    for (int i=0; i<10; i++) {
-        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
-        [self addChild:miniBlock];
-    }
+   //CCSprite *block = (CCSprite *)[CCBReader load:@"SquareSm"];
+        //[self addChild:block];
+        
+
   
 }
 

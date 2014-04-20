@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "cocos2d.h"
 
-@interface LevelData : NSObject
+@interface LevelData : CCNode
 
+@property NSInteger blockArraySize;
 @property (nonatomic, strong) NSMutableArray *blockArray;
-@property float firstGoalHeight;
-@property float secondGoalHeight;
-@property float thirdGoalHeight;
 
-
+-(void) addBlock;
+-(CCSprite*) popBlock;
 @end

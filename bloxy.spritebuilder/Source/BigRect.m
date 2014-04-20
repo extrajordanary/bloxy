@@ -9,5 +9,12 @@
 #import "BigRect.h"
 
 @implementation BigRect
+- (void)didLoadFromCCB {
+    
+}
+
+- (void)onEnter {
+    [super onEnter];
+}
 
 @end
