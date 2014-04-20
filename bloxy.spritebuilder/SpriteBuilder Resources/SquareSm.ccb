@@ -57,16 +57,16 @@
 					<real>0.0</real>
 				</array>
 				<array>
+					<real>99.921875</real>
 					<real>0.0</real>
-					<real>51</real>
 				</array>
 				<array>
-					<real>51</real>
-					<real>51</real>
+					<real>99.921875</real>
+					<real>100.81637573242188</real>
 				</array>
 				<array>
-					<real>51</real>
 					<real>0.0</real>
+					<real>100.81637573242188</real>
 				</array>
 			</array>
 		</dict>
@@ -126,7 +126,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/shapes/squareSm.png</string>
+					<string>ccbResources/new_shapes/square2.png</string>
 				</array>
 			</dict>
 			<dict>
