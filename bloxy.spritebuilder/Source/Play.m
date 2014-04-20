@@ -10,7 +10,14 @@
 
 @implementation Play {
     CCNode *_levelNode;
+<<<<<<< HEAD
     CCPhysicsNode *_physicsNode;
+=======
+    CCNode *_contentNode;
+    CCNode *_nextBlockWindow;
+    CCPhysicsNode *_physicsNode;
+
+>>>>>>> aaf1afd50805193cf12f46fb4ef20907d6092bb3
 }
 
 -(void) didLoadFromCCB{

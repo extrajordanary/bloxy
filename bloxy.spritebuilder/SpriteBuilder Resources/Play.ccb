@@ -139,9 +139,9 @@
 								<key>displayName</key>
 								<string>CCNode-LevelNode</string>
 								<key>memberVarAssignmentName</key>
-								<string></string>
+								<string>_levelNode</string>
 								<key>memberVarAssignmentType</key>
-								<integer>0</integer>
+								<integer>1</integer>
 								<key>properties</key>
 								<array>
 									<dict>
@@ -1904,9 +1904,9 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>238</real>
+									<real>110</real>
 									<real>40</real>
-									<integer>0</integer>
+									<integer>3</integer>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
@@ -1919,7 +1919,7 @@
 								<key>value</key>
 								<array>
 									<real>0.0</real>
-									<real>0.0</real>
+									<real>0.5</real>
 								</array>
 							</dict>
 							<dict>
