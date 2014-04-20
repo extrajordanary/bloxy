@@ -38,40 +38,45 @@
 }
 -(void) addBlock
 {
-    NSInteger r = arc4random() % 6;
+    NSInteger r = arc4random() % 7;
     //[_blockArray addObject:r];
     switch (r) {
         case 1: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBig"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigH"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
                         break;
         }
         case 2: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectLong"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigV"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
         case 3: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectMed"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigH"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
         case 4: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/SquareBig"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigV"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
         case 5: {
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/SquareBig"];
+            block.physicsBody.collisionType = @"block";
+            [_blockArray addObject:block];
+            break;
+        }
+        case 6: {
             CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/SquareSm"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
-     
             
         default:
             break;

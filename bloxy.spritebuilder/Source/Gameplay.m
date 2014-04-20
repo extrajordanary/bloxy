@@ -84,29 +84,27 @@
     _thePhysicsNode.position = ccp(_thePhysicsNode.position.x, _thePhysicsNode.position.y + (delta * self.scrollingCoeficcient));
     
 
-    // loop the background
-    for (CCNode *sky in _skys) {
-        // get the world position of the sky
-        CGPoint skyWorldPosition = [_thePhysicsNode convertToWorldSpace:sky.position];
-        // get the screen position of the ground
-        CGPoint skyScreenPosition = [self convertToNodeSpace:skyWorldPosition];
-        // if the bottom corner is one complete width off the screen, move it to the top
-        if (skyScreenPosition.y <= (-1 * sky.contentSize.height)) {
-            sky.position = ccp(sky.position.x, sky.position.y + 2 * sky.contentSize.height);
-        }
-    }
+//    // loop the background
+//    for (CCNode *sky in _skys) {
+//        // get the world position of the sky
+//        CGPoint skyWorldPosition = [_thePhysicsNode convertToWorldSpace:sky.position];
+//        // get the screen position of the ground
+//        CGPoint skyScreenPosition = [self convertToNodeSpace:skyWorldPosition];
+//        // if the bottom corner is one complete width off the screen, move it to the top
+//        if (skyScreenPosition.y <= (-1 * sky.contentSize.height)) {
+//            sky.position = ccp(sky.position.x, sky.position.y + 2 * sky.contentSize.height);
+//        }
+//    }
     // loop the clouds
     for (CCNode *cloud in _clouds) {
-//        NSInteger rx = arc4random() % 10;
-//        NSInteger ry = arc4random() % 30;
+        NSInteger rx = arc4random() % 100;
         // get the world position
         CGPoint cloudWorldPosition = [_thePhysicsNode convertToWorldSpace:cloud.position];
         // get the screen position
         CGPoint cloudScreenPosition = [self convertToNodeSpace:cloudWorldPosition];
         // if the bottom corner is one complete sky-width off the screen, move it to the top
-        if (cloudScreenPosition.y <= (-1 * _thePhysicsNode.contentSize.height)) {
-//            cloud.position = ccp(cloud.position.x + (rx - 5), _thePhysicsNode.position.y + 2 * _thePhysicsNode.contentSize.height + (ry - 15));
-            cloud.position = ccp(cloud.position.x, _thePhysicsNode.position.y + 2 * _thePhysicsNode.contentSize.height);
+        if (cloudScreenPosition.y <= (-1 * _thePhysicsNode.contentSize.height) - 50) {
+            cloud.position = ccp(cloud.position.x  + (rx - 50), cloud.position.y + 2272);
         }
     }
     
