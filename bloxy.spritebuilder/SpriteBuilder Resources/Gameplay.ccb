@@ -5,7 +5,7 @@
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>currentSequenceId</key>
 	<integer>0</integer>
 	<key>docDimensionsType</key>
@@ -105,9 +105,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.020261127501726151</real>
-							<real>0.60380715131759644</real>
-							<real>0.90143609046936035</real>
+							<real>0.20999999344348907</real>
+							<real>0.64999997615814209</real>
+							<real>0.87000000476837158</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -118,9 +118,9 @@
 						<string>Color3</string>
 						<key>value</key>
 						<array>
-							<real>0.61303997039794922</real>
-							<real>0.89000499248504639</real>
-							<real>0.93202149868011475</real>
+							<real>0.12999999523162842</real>
+							<real>0.5</real>
+							<real>0.80000001192092896</real>
 							<real>1</real>
 						</array>
 					</dict>
@@ -143,9 +143,9 @@
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
-				<string></string>
+				<string>BlockScroller</string>
 				<key>displayName</key>
-				<string>CCNodeGradient</string>
+				<string>CCNodeLayoutBox</string>
 				<key>memberVarAssignmentName</key>
 				<string></string>
 				<key>memberVarAssignmentType</key>
@@ -249,587 +249,14 @@
 						</array>
 					</dict>
 				</array>
-			</dict>
-			<dict>
-				<key>baseClass</key>
-				<string>CCLayoutBox</string>
-				<key>children</key>
-				<array>
-					<dict>
-						<key>baseClass</key>
-						<string>CCNodeColor</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>CCNodeColor</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>contentSize</string>
-								<key>type</key>
-								<string>Size</string>
-								<key>value</key>
-								<array>
-									<real>50</real>
-									<real>50</real>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<true/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>0.87000000476837158</real>
-									<real>0.18580716848373413</real>
-									<real>0.34025919437408447</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>opacity</string>
-								<key>type</key>
-								<string>Float</string>
-								<key>value</key>
-								<real>1</real>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>blendFunc</string>
-								<key>type</key>
-								<string>Blendmode</string>
-								<key>value</key>
-								<array>
-									<integer>770</integer>
-									<integer>771</integer>
-								</array>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>baseClass</key>
-						<string>CCNodeColor</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>CCNodeColor</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>50</real>
-									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>contentSize</string>
-								<key>type</key>
-								<string>Size</string>
-								<key>value</key>
-								<array>
-									<real>50</real>
-									<real>50</real>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<true/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>0.87000000476837158</real>
-									<real>0.18580716848373413</real>
-									<real>0.34025919437408447</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>opacity</string>
-								<key>type</key>
-								<string>Float</string>
-								<key>value</key>
-								<real>1</real>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>blendFunc</string>
-								<key>type</key>
-								<string>Blendmode</string>
-								<key>value</key>
-								<array>
-									<integer>770</integer>
-									<integer>771</integer>
-								</array>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>baseClass</key>
-						<string>CCNodeColor</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>CCNodeColor</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>100</real>
-									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>contentSize</string>
-								<key>type</key>
-								<string>Size</string>
-								<key>value</key>
-								<array>
-									<real>50</real>
-									<real>50</real>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<true/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>0.87000000476837158</real>
-									<real>0.18580716848373413</real>
-									<real>0.34025919437408447</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>opacity</string>
-								<key>type</key>
-								<string>Float</string>
-								<key>value</key>
-								<real>1</real>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>blendFunc</string>
-								<key>type</key>
-								<string>Blendmode</string>
-								<key>value</key>
-								<array>
-									<integer>770</integer>
-									<integer>771</integer>
-								</array>
-							</dict>
-						</array>
-					</dict>
-					<dict>
-						<key>baseClass</key>
-						<string>CCNodeColor</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>CCNodeColor</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>150</real>
-									<real>0.0</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>contentSize</string>
-								<key>type</key>
-								<string>Size</string>
-								<key>value</key>
-								<array>
-									<real>50</real>
-									<real>50</real>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>anchorPoint</string>
-								<key>type</key>
-								<string>Point</string>
-								<key>value</key>
-								<array>
-									<real>0.0</real>
-									<real>0.0</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<true/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>color</string>
-								<key>type</key>
-								<string>Color3</string>
-								<key>value</key>
-								<array>
-									<real>0.87000000476837158</real>
-									<real>0.18580716848373413</real>
-									<real>0.34025919437408447</real>
-									<real>1</real>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>opacity</string>
-								<key>type</key>
-								<string>Float</string>
-								<key>value</key>
-								<real>1</real>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>blendFunc</string>
-								<key>type</key>
-								<string>Blendmode</string>
-								<key>value</key>
-								<array>
-									<integer>770</integer>
-									<integer>771</integer>
-								</array>
-							</dict>
-						</array>
-					</dict>
-				</array>
-				<key>customClass</key>
-				<string></string>
-				<key>displayName</key>
-				<string>CCLayoutBox</string>
-				<key>memberVarAssignmentName</key>
-				<string></string>
-				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
-				<key>properties</key>
-				<array>
-					<dict>
-						<key>name</key>
-						<string>name</string>
-						<key>type</key>
-						<string>StringSimple</string>
-						<key>value</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>position</string>
-						<key>type</key>
-						<string>Position</string>
-						<key>value</key>
-						<array>
-							<real>15</real>
-							<real>15</real>
-							<integer>0</integer>
-							<integer>0</integer>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>anchorPoint</string>
-						<key>type</key>
-						<string>Point</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<real>0.0</real>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>scale</string>
-						<key>type</key>
-						<string>ScaleLock</string>
-						<key>value</key>
-						<array>
-							<real>1.2856205701828003</real>
-							<real>1</real>
-							<false/>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>direction</string>
-						<key>type</key>
-						<string>IntegerLabeled</string>
-						<key>value</key>
-						<integer>0</integer>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>spacing</string>
-						<key>type</key>
-						<string>FloatScale</string>
-						<key>value</key>
-						<array>
-							<real>0.0</real>
-							<integer>0</integer>
-						</array>
-					</dict>
-				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
 				<string>CCPhysicsNode</string>
 				<key>children</key>
 				<array>
-					<dict>
-						<key>baseClass</key>
-						<string>CCBFile</string>
-						<key>children</key>
-						<array/>
-						<key>customClass</key>
-						<string></string>
-						<key>displayName</key>
-						<string>CCBFile</string>
-						<key>memberVarAssignmentName</key>
-						<string></string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>properties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>name</string>
-								<key>type</key>
-								<string>StringSimple</string>
-								<key>value</key>
-								<string></string>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>position</string>
-								<key>type</key>
-								<string>Position</string>
-								<key>value</key>
-								<array>
-									<real>174.40962219238281</real>
-									<real>402.30087280273438</real>
-									<integer>0</integer>
-									<integer>0</integer>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>scale</string>
-								<key>type</key>
-								<string>ScaleLock</string>
-								<key>value</key>
-								<array>
-									<real>1</real>
-									<real>1</real>
-									<false/>
-									<integer>0</integer>
-								</array>
-							</dict>
-							<dict>
-								<key>name</key>
-								<string>ccbFile</string>
-								<key>type</key>
-								<string>CCBFile</string>
-								<key>value</key>
-								<string>Hex.ccb</string>
-							</dict>
-						</array>
-					</dict>
 					<dict>
 						<key>baseClass</key>
 						<string>CCNodeGradient</string>
@@ -839,8 +266,6 @@
 						<string></string>
 						<key>displayName</key>
 						<string>ground</string>
-						<key>locked</key>
-						<true/>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
@@ -985,17 +410,55 @@
 					</dict>
 					<dict>
 						<key>baseClass</key>
-						<string>CCBFile</string>
+						<string>CCNodeColor</string>
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCBFile</string>
+						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>0</integer>
+						<key>physicsBody</key>
+						<dict>
+							<key>affectedByGravity</key>
+							<true/>
+							<key>allowsRotation</key>
+							<true/>
+							<key>bodyShape</key>
+							<integer>0</integer>
+							<key>cornerRadius</key>
+							<real>0.0</real>
+							<key>density</key>
+							<real>1</real>
+							<key>dynamic</key>
+							<true/>
+							<key>elasticity</key>
+							<real>0.30000001192092896</real>
+							<key>friction</key>
+							<real>0.30000001192092896</real>
+							<key>points</key>
+							<array>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+								<array>
+									<real>0.0</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>0.0</real>
+								</array>
+							</array>
+						</dict>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -1013,11 +476,35 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>95.385673522949219</real>
-									<real>271.64181518554688</real>
+									<real>116.45339965820312</real>
+									<real>304.5704345703125</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>contentSize</string>
+								<key>type</key>
+								<string>Size</string>
+								<key>value</key>
+								<array>
+									<real>50</real>
+									<real>50</real>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
 								</array>
 							</dict>
 							<dict>
@@ -1035,27 +522,89 @@
 							</dict>
 							<dict>
 								<key>name</key>
-								<string>ccbFile</string>
+								<string>color</string>
 								<key>type</key>
-								<string>CCBFile</string>
+								<string>Color3</string>
 								<key>value</key>
-								<string>Circle.ccb</string>
+								<array>
+									<real>0.87000000476837158</real>
+									<real>0.67936092615127563</real>
+									<real>0.21208001673221588</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>opacity</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>blendFunc</string>
+								<key>type</key>
+								<string>Blendmode</string>
+								<key>value</key>
+								<array>
+									<integer>770</integer>
+									<integer>771</integer>
+								</array>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>baseClass</key>
-						<string>CCBFile</string>
+						<string>CCNodeColor</string>
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
-						<string>CCBFile</string>
+						<string>CCNodeColor</string>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>0</integer>
+						<key>physicsBody</key>
+						<dict>
+							<key>affectedByGravity</key>
+							<true/>
+							<key>allowsRotation</key>
+							<true/>
+							<key>bodyShape</key>
+							<integer>0</integer>
+							<key>cornerRadius</key>
+							<real>0.0</real>
+							<key>density</key>
+							<real>1</real>
+							<key>dynamic</key>
+							<true/>
+							<key>elasticity</key>
+							<real>0.30000001192092896</real>
+							<key>friction</key>
+							<real>0.30000001192092896</real>
+							<key>points</key>
+							<array>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+								<array>
+									<real>0.0</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>0.0</real>
+								</array>
+							</array>
+						</dict>
 						<key>properties</key>
 						<array>
 							<dict>
@@ -1073,11 +622,35 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>53.913639068603516</real>
-									<real>151.3729248046875</real>
+									<real>200.06097412109375</real>
+									<real>229.92082214355469</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>contentSize</string>
+								<key>type</key>
+								<string>Size</string>
+								<key>value</key>
+								<array>
+									<real>50</real>
+									<real>50</real>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
 								</array>
 							</dict>
 							<dict>
@@ -1095,11 +668,327 @@
 							</dict>
 							<dict>
 								<key>name</key>
-								<string>ccbFile</string>
+								<string>color</string>
 								<key>type</key>
-								<string>CCBFile</string>
+								<string>Color3</string>
 								<key>value</key>
-								<string>Tri.ccb</string>
+								<array>
+									<real>0.87000000476837158</real>
+									<real>0.67936092615127563</real>
+									<real>0.21208001673221588</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>opacity</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>blendFunc</string>
+								<key>type</key>
+								<string>Blendmode</string>
+								<key>value</key>
+								<array>
+									<integer>770</integer>
+									<integer>771</integer>
+								</array>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>baseClass</key>
+						<string>CCNodeColor</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>CCNodeColor</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>0</integer>
+						<key>physicsBody</key>
+						<dict>
+							<key>affectedByGravity</key>
+							<true/>
+							<key>allowsRotation</key>
+							<true/>
+							<key>bodyShape</key>
+							<integer>0</integer>
+							<key>cornerRadius</key>
+							<real>0.0</real>
+							<key>density</key>
+							<real>1</real>
+							<key>dynamic</key>
+							<true/>
+							<key>elasticity</key>
+							<real>0.30000001192092896</real>
+							<key>friction</key>
+							<real>0.30000001192092896</real>
+							<key>points</key>
+							<array>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+								<array>
+									<real>0.0</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>0.0</real>
+								</array>
+							</array>
+						</dict>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>203.33494567871094</real>
+									<real>327.84542846679688</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>contentSize</string>
+								<key>type</key>
+								<string>Size</string>
+								<key>value</key>
+								<array>
+									<real>50</real>
+									<real>50</real>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>0.87000000476837158</real>
+									<real>0.67936092615127563</real>
+									<real>0.21208001673221588</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>opacity</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>blendFunc</string>
+								<key>type</key>
+								<string>Blendmode</string>
+								<key>value</key>
+								<array>
+									<integer>770</integer>
+									<integer>771</integer>
+								</array>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>baseClass</key>
+						<string>CCNodeColor</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>CCNodeColor</string>
+						<key>memberVarAssignmentName</key>
+						<string></string>
+						<key>memberVarAssignmentType</key>
+						<integer>0</integer>
+						<key>physicsBody</key>
+						<dict>
+							<key>affectedByGravity</key>
+							<true/>
+							<key>allowsRotation</key>
+							<true/>
+							<key>bodyShape</key>
+							<integer>0</integer>
+							<key>cornerRadius</key>
+							<real>0.0</real>
+							<key>density</key>
+							<real>1</real>
+							<key>dynamic</key>
+							<true/>
+							<key>elasticity</key>
+							<real>0.30000001192092896</real>
+							<key>friction</key>
+							<real>0.30000001192092896</real>
+							<key>points</key>
+							<array>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+								<array>
+									<real>0.0</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>50</real>
+								</array>
+								<array>
+									<real>50</real>
+									<real>0.0</real>
+								</array>
+							</array>
+						</dict>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>name</string>
+								<key>type</key>
+								<string>StringSimple</string>
+								<key>value</key>
+								<string></string>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>89.579536437988281</real>
+									<real>158.25718688964844</real>
+									<integer>0</integer>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>contentSize</string>
+								<key>type</key>
+								<string>Size</string>
+								<key>value</key>
+								<array>
+									<real>50</real>
+									<real>50</real>
+									<integer>0</integer>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>color</string>
+								<key>type</key>
+								<string>Color3</string>
+								<key>value</key>
+								<array>
+									<real>0.87000000476837158</real>
+									<real>0.67936092615127563</real>
+									<real>0.21208001673221588</real>
+									<real>1</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>opacity</string>
+								<key>type</key>
+								<string>Float</string>
+								<key>value</key>
+								<real>1</real>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>blendFunc</string>
+								<key>type</key>
+								<string>Blendmode</string>
+								<key>value</key>
+								<array>
+									<integer>770</integer>
+									<integer>771</integer>
+								</array>
 							</dict>
 						</array>
 					</dict>
@@ -1578,8 +1467,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
