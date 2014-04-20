@@ -11,7 +11,7 @@
 @implementation Blocks
 
 - (void)didLoadFromCCB {
-    
+//    self.physicsBody = CCPhysicsBody bo
 }
 
 - (void)onEnter {

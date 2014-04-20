@@ -37,13 +37,12 @@
 //        [self addChild:mb];
 //    }
 
-    for (int i=0; i<2; i++) {
-        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
-        [self addChild:miniBlock];
-//        Blocks *nextBlock = (Blocks *)[CCBReader load:@"SquareSm"];
-//        [self addChild:nextBlock];
+//    for (int i=0; i<2; i++) {
+//        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
+//        [self addChild:miniBlock];
+
         
-    }
+//    }
   
 }
 
