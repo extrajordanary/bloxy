@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4D355E19036DD40040E81A /* BlockScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D355D19036DD40040E81A /* BlockScroller.m */; };
+		3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D356019036F9E0040E81A /* MiniBlock.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
 		B71F5913188484E7003F4D28 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
@@ -55,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D4D355C19036DD40040E81A /* BlockScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockScroller.h; path = Source/BlockScroller.h; sourceTree = "<group>"; };
+		3D4D355D19036DD40040E81A /* BlockScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlockScroller.m; path = Source/BlockScroller.m; sourceTree = "<group>"; };
+		3D4D355F19036F9E0040E81A /* MiniBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniBlock.h; sourceTree = "<group>"; };
+		3D4D356019036F9E0040E81A /* MiniBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiniBlock.m; sourceTree = "<group>"; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
 		B71F5909188484E7003F4D28 /* iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPad.png; path = Icons/iPad.png; sourceTree = "<group>"; };
@@ -122,6 +128,10 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3D4D355C19036DD40040E81A /* BlockScroller.h */,
+				3D4D355D19036DD40040E81A /* BlockScroller.m */,
+				3D4D355F19036F9E0040E81A /* MiniBlock.h */,
+				3D4D356019036F9E0040E81A /* MiniBlock.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
@@ -320,7 +330,9 @@
 			files = (
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
+				3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				3D4D355E19036DD40040E81A /* BlockScroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
