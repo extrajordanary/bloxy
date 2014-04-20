@@ -10,6 +10,10 @@
 
 @implementation Play {
     CCNode *_levelNode;
+    CCNode *_contentNode;
+    CCNode *_nextBlockWindow;
+    CCPhysicsNode *_physicsNode;
+
 }
 
 -(void) didLoadFromCCB{

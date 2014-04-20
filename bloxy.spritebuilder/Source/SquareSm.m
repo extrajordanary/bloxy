@@ -10,4 +10,12 @@
 
 @implementation SquareSm
 
+//- (void)didLoadFromCCB {
+//    
+//}
+//
+//- (void)onEnter {
+//    [super onEnter];
+//}
+
 @end

@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "MiniBlock.h"
+#import "Blocks.h"
+#import "SquareSm.h"
 
 
 

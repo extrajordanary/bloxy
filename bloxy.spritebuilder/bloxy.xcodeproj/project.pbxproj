@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17CBDB9D1903C7440076C371 /* Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBDB9C1903C7440076C371 /* Blocks.m */; };
+		17CBDBA21903F0CA0076C371 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBDBA11903F0CA0076C371 /* Gameplay.m */; };
 		17D4688D1903A96900B4CEE7 /* Tri.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D4688C1903A96900B4CEE7 /* Tri.m */; };
 		17D468911903A99300B4CEE7 /* Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468901903A99300B4CEE7 /* Hex.m */; };
 		17D468941903A9A400B4CEE7 /* BigRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468931903A9A400B4CEE7 /* BigRect.m */; };
@@ -67,6 +69,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17CBDB9B1903C7440076C371 /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Blocks.h; path = Source/Blocks.h; sourceTree = "<group>"; };
+		17CBDB9C1903C7440076C371 /* Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Blocks.m; path = Source/Blocks.m; sourceTree = "<group>"; };
+		17CBDBA01903F0CA0076C371 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
+		17CBDBA11903F0CA0076C371 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		17D4688B1903A96900B4CEE7 /* Tri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tri.h; path = Source/Tri.h; sourceTree = "<group>"; };
 		17D4688C1903A96900B4CEE7 /* Tri.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tri.m; path = Source/Tri.m; sourceTree = "<group>"; };
 		17D4688F1903A99300B4CEE7 /* Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hex.h; path = Source/Hex.h; sourceTree = "<group>"; };
@@ -147,21 +153,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9222E2B918734FF800A246C7 /* libs */ = {
+		17CBDB991903C61C0076C371 /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */,
-			);
-			name = libs;
-			sourceTree = "<group>";
-		};
-		B737893C1807616C0076A88C /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				3D4D355C19036DD40040E81A /* BlockScroller.h */,
-				3D4D355D19036DD40040E81A /* BlockScroller.m */,
-				3D8679D81903B2DF00AE8DBE /* LevelData.h */,
-				3D8679D91903B2DF00AE8DBE /* LevelData.m */,
 				17D468A61903BE8400B4CEE7 /* Circle.h */,
 				17D468A71903BE8400B4CEE7 /* Circle.m */,
 				17D4688B1903A96900B4CEE7 /* Tri.h */,
@@ -180,12 +174,36 @@
 				17D4689F1903A9E400B4CEE7 /* SquareSm.m */,
 				3D4D355F19036F9E0040E81A /* MiniBlock.h */,
 				3D4D356019036F9E0040E81A /* MiniBlock.m */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		9222E2B918734FF800A246C7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		B737893C1807616C0076A88C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3D4D355C19036DD40040E81A /* BlockScroller.h */,
+				3D4D355D19036DD40040E81A /* BlockScroller.m */,
+				17CBDBA01903F0CA0076C371 /* Gameplay.h */,
+				17CBDBA11903F0CA0076C371 /* Gameplay.m */,
+				3D8679D81903B2DF00AE8DBE /* LevelData.h */,
+				3D8679D91903B2DF00AE8DBE /* LevelData.m */,
+				17CBDB991903C61C0076C371 /* Shapes */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
 				17D468A11903BD0800B4CEE7 /* Play.h */,
 				17D468A21903BD0800B4CEE7 /* Play.m */,
+				17CBDB9B1903C7440076C371 /* Blocks.h */,
+				17CBDB9C1903C7440076C371 /* Blocks.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -379,6 +397,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8679DA1903B2DF00AE8DBE /* LevelData.m in Sources */,
+				17CBDBA21903F0CA0076C371 /* Gameplay.m in Sources */,
+				17CBDB9D1903C7440076C371 /* Blocks.m in Sources */,
 				17D468A31903BD0800B4CEE7 /* Play.m in Sources */,
 				17D468A81903BE8400B4CEE7 /* Circle.m in Sources */,
 				17D468911903A99300B4CEE7 /* Hex.m in Sources */,

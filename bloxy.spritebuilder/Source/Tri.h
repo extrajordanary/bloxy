@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "CCSprite.h"
+#import "Blocks.h"
 
-@interface Tri : CCSprite
+@interface Tri : Blocks
 
 @end

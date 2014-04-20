@@ -1,5 +1,5 @@
 //
-//  BigRect.h
+//  Blocks.m
 //  bloxy
 //
 //  Created by Jordan on 4/20/14.
@@ -8,6 +8,14 @@
 
 #import "Blocks.h"
 
-@interface BigRect : Blocks
+@implementation Blocks
+
+- (void)didLoadFromCCB {
+    
+}
+
+- (void)onEnter {
+    [super onEnter];
+}
 
 @end
