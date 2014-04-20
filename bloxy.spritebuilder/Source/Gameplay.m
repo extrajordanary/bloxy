@@ -30,7 +30,7 @@
     self.scrollingIncreaseInterval = -5;
     self.scrollingCoeficcient = .01;
     self.scrollingCoeficcientIncrease =1.1;
-    
+    _thePhysicsNode.collisionDelegate = self;
     
     
 }
@@ -66,10 +66,13 @@
     
     _thePhysicsNode.position = ccp(_thePhysicsNode.position.x, _thePhysicsNode.position.y + (delta * self.scrollingCoeficcient));
     
-    
+
 }
 
-
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair block1:(CCNode *)block1 block2:(CCNode *)block2 {
+    CCLOG(@"Collision");
+    return TRUE;
+}
 
 
 @end

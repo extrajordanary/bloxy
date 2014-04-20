@@ -8,8 +8,8 @@
 
 #import "CCNode.h"
 #import "LevelData.h"
-#import "Blocks.h"
-@interface Gameplay : CCNode
+#import "Block.h"
+@interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
 
 
 

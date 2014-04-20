@@ -13,6 +13,7 @@
 
 @property NSInteger blockArraySize;
 @property (nonatomic, strong) NSMutableArray *blockArray;
+@property (nonatomic, strong) NSMutableArray *droppedBlockArray;
 
 -(void) addBlock;
 -(CCSprite*) popBlock;

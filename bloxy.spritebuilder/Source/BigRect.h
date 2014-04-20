@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "Blocks.h"
+#import "Block.h"
 
-@interface BigRect : Blocks
+@interface BigRect : Block
 
 @end

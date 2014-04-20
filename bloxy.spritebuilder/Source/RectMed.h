@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
-#import "Blocks.h"
+#import "Block.h"
 
-@interface RectMed : Blocks
+@interface RectMed : Block
 
 @end

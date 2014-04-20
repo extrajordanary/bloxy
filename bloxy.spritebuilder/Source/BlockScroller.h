@@ -12,7 +12,7 @@
 #import "LevelData.h"
 
 #import "MiniBlock.h"
-#import "Blocks.h"
+#import "Block.h"
 #import "SquareSm.h"
 
 

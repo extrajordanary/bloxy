@@ -12,6 +12,7 @@
 #import "RectMed.h"
 #import "SquareBig.h"
 #import "SquareSm.h"
+#import "Block.h"
 
 @implementation LevelData
 
@@ -42,27 +43,27 @@
     
     switch (r) {
         case 1: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"RectBig"];
+            Block *block = (Block *)[CCBReader load:@"RectBig"];
             [_blockArray addObject:block];
             break;
         }
         case 2: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"RectLong"];
+            Block *block = (Block *)[CCBReader load:@"RectLong"];
             [_blockArray addObject:block];
             break;
         }
         case 3: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"RectMed"];
+            Block *block = (Block *)[CCBReader load:@"RectMed"];
             [_blockArray addObject:block];
             break;
         }
         case 4: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"SquareBig"];
+            Block *block = (Block *)[CCBReader load:@"SquareBig"];
             [_blockArray addObject:block];
             break;
         }
         case 5: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"SquareSm"];
+            Block *block = (Block *)[CCBReader load:@"SquareSm"];
             [_blockArray addObject:block];
             break;
         }
@@ -80,10 +81,8 @@
     CCSprite *sprite = [_blockArray firstObject];
     [_blockArray removeObjectAtIndex:0];
     while (_blockArray.count < 4)
-    [self addBlock];
-    //CCSprite *sprite = (CCSprite *)[CCBReader load:@"SquareSm"];
+        [self addBlock];
     
-    NSLog(@"%i" ,_blockArray.count);
     return sprite;
     
 }
