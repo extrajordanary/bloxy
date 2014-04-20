@@ -53,20 +53,24 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>-0.04296875</real>
-					<real>150.25778198242188</real>
-				</array>
-				<array>
 					<real>0.0</real>
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>150.796875</real>
+					<real>147.7421875</real>
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>150.796875</real>
-					<real>150.04296875</real>
+					<real>147.7421875</real>
+					<real>48.984359741210938</real>
+				</array>
+				<array>
+					<real>48.62109375</real>
+					<real>150</real>
+				</array>
+				<array>
+					<real>0.0</real>
+					<real>150</real>
 				</array>
 			</array>
 		</dict>
@@ -126,7 +130,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/new_shapes/sqare3.png</string>
+					<string>ccbResources/new_shapes/bigL.png</string>
 				</array>
 			</dict>
 			<dict>

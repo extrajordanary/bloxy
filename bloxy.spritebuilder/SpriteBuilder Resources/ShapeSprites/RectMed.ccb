@@ -25,7 +25,7 @@
 		<key>children</key>
 		<array/>
 		<key>customClass</key>
-		<string>Hex</string>
+		<string></string>
 		<key>displayName</key>
 		<string>CCSprite</string>
 		<key>memberVarAssignmentName</key>
@@ -49,28 +49,24 @@
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>0.30000001192092896</real>
+			<real>0.60000002384185791</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>1.7559525966644287</real>
-					<real>48.553211212158203</real>
+					<real>0.0</real>
+					<real>0.0</real>
 				</array>
 				<array>
-					<real>15.128323554992676</real>
-					<real>2.8736510276794434</real>
+					<real>100.02734375</real>
+					<real>0.0</real>
 				</array>
 				<array>
-					<real>62.935009002685547</real>
-					<real>1.8820391893386841</real>
+					<real>100.02734375</real>
+					<real>152.58984375</real>
 				</array>
 				<array>
-					<real>78.287986755371094</real>
-					<real>46.832935333251953</real>
-				</array>
-				<array>
-					<real>40.502079010009766</real>
-					<real>74.802146911621094</real>
+					<real>0.0</real>
+					<real>152.58984375</real>
 				</array>
 			</array>
 		</dict>
@@ -130,7 +126,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/shapes/hex.png</string>
+					<string>ccbResources/new_shapes/rect2x3.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -147,8 +143,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

@@ -58,11 +58,11 @@
 				</array>
 				<array>
 					<real>0.0</real>
-					<real>26</real>
+					<real>51</real>
 				</array>
 				<array>
 					<real>139</real>
-					<real>26</real>
+					<real>51</real>
 				</array>
 				<array>
 					<real>139</real>
@@ -126,7 +126,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/shapes/rectLong.png</string>
+					<string>ccbResources/shapes/rectBig.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -143,8 +143,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
