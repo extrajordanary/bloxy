@@ -49,7 +49,7 @@
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>0.30000001192092896</real>
+			<real>0.60000002384185791</real>
 			<key>points</key>
 			<array>
 				<array>
@@ -57,16 +57,16 @@
 					<real>0.0</real>
 				</array>
 				<array>
+					<real>49.1875</real>
 					<real>0.0</real>
-					<real>26</real>
 				</array>
 				<array>
-					<real>139</real>
-					<real>26</real>
+					<real>49.1875</real>
+					<real>151.9609375</real>
 				</array>
 				<array>
-					<real>139</real>
 					<real>0.0</real>
+					<real>151.9609375</real>
 				</array>
 			</array>
 		</dict>
@@ -126,7 +126,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/shapes/rectLong.png</string>
+					<string>ccbResources/new_shapes/rect1x3.png</string>
 				</array>
 			</dict>
 			<dict>

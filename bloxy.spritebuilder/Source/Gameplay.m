@@ -12,6 +12,7 @@
     CCPhysicsNode *_thePhysicsNode;
     CCNode *_sky1;
     CCNode *_sky2;
+    NSArray *_skys;
     
     //CCNode *_levelNode;
     
@@ -31,6 +32,7 @@
     self.scrollingCoeficcient = .01;
     self.scrollingCoeficcientIncrease =1.1;
     
+    _skys = @[_sky1, _sky2];
     
     
 }
@@ -66,7 +68,17 @@
     
     _thePhysicsNode.position = ccp(_thePhysicsNode.position.x, _thePhysicsNode.position.y + (delta * self.scrollingCoeficcient));
     
-    
+    // loop the background
+    for (CCNode *sky in _skys) {
+        // get the world position of the sky
+        CGPoint skyWorldPosition = [_thePhysicsNode convertToWorldSpace:sky.position];
+        // get the screen position of the ground
+        CGPoint skyScreenPosition = [self convertToNodeSpace:skyWorldPosition];
+        // if the bottom corner is one complete width off the screen, move it to the top
+        if (skyScreenPosition.y <= (-1 * sky.contentSize.height)) {
+            sky.position = ccp(sky.position.x, sky.position.y + 2 * sky.contentSize.height);
+        }
+    }
 }
 
 
