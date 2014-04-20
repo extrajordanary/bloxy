@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "MiniBlock.h"
 
-@interface BlockScroller : CCNodeGradient {
+@interface BlockScroller : CCLayoutBox {
+    NSMutableArray *miniBlockArray;
     
 }
 

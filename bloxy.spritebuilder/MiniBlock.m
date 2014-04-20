@@ -16,7 +16,7 @@
 }
 
 - (void)onEnter {
-    
+    [super onEnter];
 }
 
 @end
