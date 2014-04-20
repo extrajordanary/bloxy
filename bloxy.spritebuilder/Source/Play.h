@@ -10,4 +10,10 @@
 
 @interface Play : CCNode
 
+
+//scrolling data
+@property float scrollDeltaY;
+@property float lastFrameOriginY;
+@property CGPoint lastLocation;
+@property CGPoint touchPosition;
 @end

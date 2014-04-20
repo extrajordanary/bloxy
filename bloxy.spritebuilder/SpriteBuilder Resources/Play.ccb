@@ -1376,7 +1376,7 @@
 					</dict>
 				</array>
 				<key>customClass</key>
-				<string></string>
+				<string>Play</string>
 				<key>displayName</key>
 				<string>Non-UI Things</string>
 				<key>locked</key>
@@ -1681,7 +1681,7 @@
 						<key>memberVarAssignmentName</key>
 						<string>_nextBlockWindow</string>
 						<key>memberVarAssignmentType</key>
-						<integer>1</integer>
+						<integer>0</integer>
 						<key>properties</key>
 						<array>
 							<dict>

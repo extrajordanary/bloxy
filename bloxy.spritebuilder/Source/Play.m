@@ -19,6 +19,28 @@
 -(void) didLoadFromCCB{
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
+    CCLOG(@"Play Loaded from ccb");
+    self.userInteractionEnabled = TRUE;
 }
+
+
+- (void)onEnter {
+    [super onEnter];
+}
+
+- (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    
+}
+-(void) touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
+{
+   
+}
+
+-(void) update:(CCTime)delta
+{
+    
+}
+
 
 @end
