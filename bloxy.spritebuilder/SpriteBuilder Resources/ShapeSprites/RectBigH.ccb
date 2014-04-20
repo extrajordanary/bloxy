@@ -23,7 +23,103 @@
 		<key>baseClass</key>
 		<string>CCSprite</string>
 		<key>children</key>
-		<array/>
+		<array>
+			<dict>
+				<key>baseClass</key>
+				<string>CCSprite</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>CCSprite</string>
+				<key>memberVarAssignmentName</key>
+				<string></string>
+				<key>memberVarAssignmentType</key>
+				<integer>0</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.5</real>
+							<real>0.5</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>rotation</string>
+						<key>type</key>
+						<string>Degrees</string>
+						<key>value</key>
+						<real>90</real>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>spriteFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>ccbResources/new_shapes/rect2x3.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>color</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+							<real>1</real>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</array>
 		<key>customClass</key>
 		<string></string>
 		<key>displayName</key>
@@ -49,28 +145,24 @@
 			<key>elasticity</key>
 			<real>0.30000001192092896</real>
 			<key>friction</key>
-			<real>0.30000001192092896</real>
+			<real>0.60000002384185791</real>
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
+					<real>-74.296875</real>
+					<real>-47.25</real>
 				</array>
 				<array>
-					<real>103.48307037353516</real>
-					<real>-26.655557632446289</real>
+					<real>73.23828125</real>
+					<real>-47.25</real>
 				</array>
 				<array>
-					<real>151.26380920410156</real>
-					<real>0.0</real>
+					<real>73.23828125</real>
+					<real>49.9609375</real>
 				</array>
 				<array>
-					<real>151.26380920410156</real>
-					<real>151.1112060546875</real>
-				</array>
-				<array>
-					<real>0.0</real>
-					<real>150</real>
+					<real>-74.296875</real>
+					<real>49.9609375</real>
 				</array>
 			</array>
 		</dict>
@@ -130,7 +222,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>ccbResources/new_shapes/horseshoe.png</string>
+					<string></string>
 				</array>
 			</dict>
 			<dict>
@@ -144,6 +236,17 @@
 					<real>1</real>
 					<real>1</real>
 					<real>1</real>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>blendFunc</string>
+				<key>type</key>
+				<string>Blendmode</string>
+				<key>value</key>
+				<array>
+					<integer>770</integer>
+					<integer>771</integer>
 				</array>
 			</dict>
 		</array>
