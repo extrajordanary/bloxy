@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17D4688D1903A96900B4CEE7 /* Tri.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D4688C1903A96900B4CEE7 /* Tri.m */; };
+		17D468911903A99300B4CEE7 /* Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468901903A99300B4CEE7 /* Hex.m */; };
+		17D468941903A9A400B4CEE7 /* BigRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468931903A9A400B4CEE7 /* BigRect.m */; };
+		17D468971903A9B700B4CEE7 /* RectLong.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468961903A9B700B4CEE7 /* RectLong.m */; };
+		17D4689A1903A9C900B4CEE7 /* RectMed.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468991903A9C900B4CEE7 /* RectMed.m */; };
+		17D4689D1903A9D700B4CEE7 /* SquareBig.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D4689C1903A9D700B4CEE7 /* SquareBig.m */; };
+		17D468A01903A9E400B4CEE7 /* SquareSm.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D4689F1903A9E400B4CEE7 /* SquareSm.m */; };
+		17D468A31903BD0800B4CEE7 /* Play.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468A21903BD0800B4CEE7 /* Play.m */; };
+		17D468A81903BE8400B4CEE7 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468A71903BE8400B4CEE7 /* Circle.m */; };
 		3D4D355E19036DD40040E81A /* BlockScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D355D19036DD40040E81A /* BlockScroller.m */; };
 		3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4D356019036F9E0040E81A /* MiniBlock.m */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
@@ -57,6 +66,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17D4688B1903A96900B4CEE7 /* Tri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tri.h; path = Source/Tri.h; sourceTree = "<group>"; };
+		17D4688C1903A96900B4CEE7 /* Tri.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tri.m; path = Source/Tri.m; sourceTree = "<group>"; };
+		17D4688F1903A99300B4CEE7 /* Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hex.h; path = Source/Hex.h; sourceTree = "<group>"; };
+		17D468901903A99300B4CEE7 /* Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hex.m; path = Source/Hex.m; sourceTree = "<group>"; };
+		17D468921903A9A400B4CEE7 /* BigRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BigRect.h; path = Source/BigRect.h; sourceTree = "<group>"; };
+		17D468931903A9A400B4CEE7 /* BigRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BigRect.m; path = Source/BigRect.m; sourceTree = "<group>"; };
+		17D468951903A9B700B4CEE7 /* RectLong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RectLong.h; path = Source/RectLong.h; sourceTree = "<group>"; };
+		17D468961903A9B700B4CEE7 /* RectLong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RectLong.m; path = Source/RectLong.m; sourceTree = "<group>"; };
+		17D468981903A9C900B4CEE7 /* RectMed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RectMed.h; path = Source/RectMed.h; sourceTree = "<group>"; };
+		17D468991903A9C900B4CEE7 /* RectMed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RectMed.m; path = Source/RectMed.m; sourceTree = "<group>"; };
+		17D4689B1903A9D700B4CEE7 /* SquareBig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareBig.h; path = Source/SquareBig.h; sourceTree = "<group>"; };
+		17D4689C1903A9D700B4CEE7 /* SquareBig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SquareBig.m; path = Source/SquareBig.m; sourceTree = "<group>"; };
+		17D4689E1903A9E400B4CEE7 /* SquareSm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SquareSm.h; path = Source/SquareSm.h; sourceTree = "<group>"; };
+		17D4689F1903A9E400B4CEE7 /* SquareSm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SquareSm.m; path = Source/SquareSm.m; sourceTree = "<group>"; };
+		17D468A11903BD0800B4CEE7 /* Play.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Play.h; path = Source/Play.h; sourceTree = "<group>"; };
+		17D468A21903BD0800B4CEE7 /* Play.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Play.m; path = Source/Play.m; sourceTree = "<group>"; };
+		17D468A61903BE8400B4CEE7 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = Source/Circle.h; sourceTree = "<group>"; };
+		17D468A71903BE8400B4CEE7 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Circle.m; path = Source/Circle.m; sourceTree = "<group>"; };
 		3D4D355C19036DD40040E81A /* BlockScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockScroller.h; path = Source/BlockScroller.h; sourceTree = "<group>"; };
 		3D4D355D19036DD40040E81A /* BlockScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlockScroller.m; path = Source/BlockScroller.m; sourceTree = "<group>"; };
 		3D4D355F19036F9E0040E81A /* MiniBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiniBlock.h; sourceTree = "<group>"; };
@@ -130,12 +157,30 @@
 			children = (
 				3D4D355C19036DD40040E81A /* BlockScroller.h */,
 				3D4D355D19036DD40040E81A /* BlockScroller.m */,
+				17D468A61903BE8400B4CEE7 /* Circle.h */,
+				17D468A71903BE8400B4CEE7 /* Circle.m */,
+				17D4688B1903A96900B4CEE7 /* Tri.h */,
+				17D4688C1903A96900B4CEE7 /* Tri.m */,
+				17D4688F1903A99300B4CEE7 /* Hex.h */,
+				17D468901903A99300B4CEE7 /* Hex.m */,
+				17D468921903A9A400B4CEE7 /* BigRect.h */,
+				17D468931903A9A400B4CEE7 /* BigRect.m */,
+				17D468951903A9B700B4CEE7 /* RectLong.h */,
+				17D468961903A9B700B4CEE7 /* RectLong.m */,
+				17D468981903A9C900B4CEE7 /* RectMed.h */,
+				17D468991903A9C900B4CEE7 /* RectMed.m */,
+				17D4689B1903A9D700B4CEE7 /* SquareBig.h */,
+				17D4689C1903A9D700B4CEE7 /* SquareBig.m */,
+				17D4689E1903A9E400B4CEE7 /* SquareSm.h */,
+				17D4689F1903A9E400B4CEE7 /* SquareSm.m */,
 				3D4D355F19036F9E0040E81A /* MiniBlock.h */,
 				3D4D356019036F9E0040E81A /* MiniBlock.m */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				17D468A11903BD0800B4CEE7 /* Play.h */,
+				17D468A21903BD0800B4CEE7 /* Play.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -328,10 +373,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D468A31903BD0800B4CEE7 /* Play.m in Sources */,
+				17D468A81903BE8400B4CEE7 /* Circle.m in Sources */,
+				17D468911903A99300B4CEE7 /* Hex.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				17D4689D1903A9D700B4CEE7 /* SquareBig.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */,
+				17D468941903A9A400B4CEE7 /* BigRect.m in Sources */,
+				17D4688D1903A96900B4CEE7 /* Tri.m in Sources */,
+				17D4689A1903A9C900B4CEE7 /* RectMed.m in Sources */,
+				17D468971903A9B700B4CEE7 /* RectLong.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				17D468A01903A9E400B4CEE7 /* SquareSm.m in Sources */,
 				3D4D355E19036DD40040E81A /* BlockScroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
