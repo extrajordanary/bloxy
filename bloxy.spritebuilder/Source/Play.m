@@ -10,27 +10,37 @@
 
 @implementation Play {
     CCNode *_levelNode;
+
+    CCPhysicsNode *_physicsNode;
+
     CCNode *_contentNode;
     CCNode *_nextBlockWindow;
-    CCPhysicsNode *_physicsNode;
 
 }
 
 -(void) didLoadFromCCB{
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
-    CCLOG(@"Play Loaded from ccb");
     self.userInteractionEnabled = TRUE;
+    
+    //some initialization code
+    self.scrollingIncreaseInterval = -5;
+    self.scrollingCoeficcient = 30;
+    self.scrollingCoeficcientIncrease =1.1;
+    
+    
+    
 }
 
 
 - (void)onEnter {
     [super onEnter];
+    self.timeStarted = [NSDate date];
 }
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    
+  
 }
 -(void) touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
@@ -39,6 +49,15 @@
 
 -(void) update:(CCTime)delta
 {
+    self.timeSinceIncrease = [self.timeStarted timeIntervalSinceNow];
+    if(self.timeSinceIncrease < self.scrollingIncreaseInterval)
+    {
+        self.scrollingCoeficcient = self.scrollingCoeficcientIncrease * self.scrollingCoeficcient;
+        self.timeStarted = [NSDate date];
+    }
+    
+    _physicsNode.position = ccp(_physicsNode.position.x, _physicsNode.position.y - (delta * self.scrollingCoeficcient));
+                        
     
 }
 
