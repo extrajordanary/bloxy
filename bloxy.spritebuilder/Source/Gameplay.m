@@ -41,7 +41,7 @@
     
     //some initialization code
     self.scrollingIncreaseInterval = -5;
-    self.scrollingCoeficcient = .01;
+    self.scrollingCoeficcient = .02;
     self.scrollingCoeficcientIncrease =1.1;
     _thePhysicsNode.collisionDelegate = self;
 
@@ -74,6 +74,8 @@
 
 -(void) update:(CCTime)delta
 {
+    BOOL allBlocksBelowBottom = NO;
+
     self.timeSinceIncrease = [self.timeStarted timeIntervalSinceNow];
     if(self.timeSinceIncrease < self.scrollingIncreaseInterval)
     {
@@ -112,8 +114,26 @@
     
     
     //remove older blocks
-   // for
+    NSMutableArray *arry = [_levelData getDroppedBlockArray];
+    if (arry.count != 0){
+        allBlocksBelowBottom = YES;
+        for (CCSprite *ccs in arry)
+        {
+            
+            CGPoint pos = [ccs position];
+            CGPoint globalPos = [_thePhysicsNode convertToWorldSpace:pos];
+            [self convertToNodeSpace:globalPos];
+            
+            if (globalPos.y > -100)
+                allBlocksBelowBottom = NO;
+        }
+    }
     
+    //determine end
+    if (allBlocksBelowBottom)
+    {
+        CCLOG(@"GAME OVER");
+    }
     
 }
 

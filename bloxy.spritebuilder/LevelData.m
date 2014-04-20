@@ -99,5 +99,9 @@
         CCLOG(@"%i",_droppedBlockArray.count);
     }
 }
+-(NSMutableArray*) getDroppedBlockArray
+{
+    return _droppedBlockArray;
+}
 
 @end
