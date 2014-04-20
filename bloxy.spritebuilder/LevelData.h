@@ -17,4 +17,5 @@
 
 -(void) addBlock;
 -(CCSprite*) popBlock;
+-(void) addDroppedBlockArrayObject:(CCSprite *)object;
 @end

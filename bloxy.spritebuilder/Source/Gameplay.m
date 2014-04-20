@@ -43,13 +43,11 @@
     self.scrollingIncreaseInterval = -5;
     self.scrollingCoeficcient = .01;
     self.scrollingCoeficcientIncrease =1.1;
-<<<<<<< HEAD
     _thePhysicsNode.collisionDelegate = self;
-=======
+
     
     _skys = @[_sky1, _sky2];
     _clouds = @[_cloud1, _cloud2, _cloud3, _cloud4, _cloud5, _cloud6, _cloud7,_cloud8,_cloud9, _cloud10, _cloud11];
->>>>>>> 8e73893ba62ce7d6c1170c60206ce3ee08c0b259
     
     
 }
@@ -85,8 +83,7 @@
     
     _thePhysicsNode.position = ccp(_thePhysicsNode.position.x, _thePhysicsNode.position.y + (delta * self.scrollingCoeficcient));
     
-<<<<<<< HEAD
-=======
+
     // loop the background
     for (CCNode *sky in _skys) {
         // get the world position of the sky
@@ -112,14 +109,21 @@
             cloud.position = ccp(cloud.position.x, _thePhysicsNode.position.y + 2 * _thePhysicsNode.contentSize.height);
         }
     }
+    
+    
+    //remove older blocks
+   // for
+    
+    
 }
->>>>>>> 8e73893ba62ce7d6c1170c60206ce3ee08c0b259
 
-}
 
--(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair block1:(CCNode *)block1 block2:(CCNode *)block2 {
-    CCLOG(@"Collision");
-    return TRUE;
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair block:(CCNode *)block1 block:(CCNode *)block2 {
+    [_levelData addDroppedBlockArrayObject:(CCSprite *)block1];
+    [_levelData addDroppedBlockArrayObject:(CCSprite *)block2];
+    
+        return TRUE;
 }
 
 

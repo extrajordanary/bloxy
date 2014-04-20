@@ -22,6 +22,7 @@
     if (self)
     {
         self.blockArray = [NSMutableArray array];
+        _droppedBlockArray = [NSMutableArray array];
         //_blockArraySize = 5;
         for (int i =0; i<5; i++)
         {
@@ -35,35 +36,38 @@
     else
         return NULL;
 }
-
 -(void) addBlock
 {
-    NSInteger r = arc4random() % 5;
+    NSInteger r = arc4random() % 6;
     //[_blockArray addObject:r];
-    
     switch (r) {
         case 1: {
-            Block *block = (Block *)[CCBReader load:@"RectBig"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBig"];
+            block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
-            break;
+                        break;
         }
         case 2: {
-            Block *block = (Block *)[CCBReader load:@"RectLong"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectLong"];
+            block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
         case 3: {
-            Block *block = (Block *)[CCBReader load:@"RectMed"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectMed"];
+            block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
         case 4: {
-            Block *block = (Block *)[CCBReader load:@"SquareBig"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/SquareBig"];
+            block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
         case 5: {
-            Block *block = (Block *)[CCBReader load:@"SquareSm"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/SquareSm"];
+            block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
@@ -71,7 +75,8 @@
             
         default:
             break;
-     
+            
+
     }
     
 }
@@ -85,6 +90,14 @@
     
     return sprite;
     
+}
+-(void) addDroppedBlockArrayObject:(CCSprite *)object
+{
+    if (![_droppedBlockArray containsObject:object])
+    {
+        [_droppedBlockArray addObject:object];
+        CCLOG(@"%i",_droppedBlockArray.count);
+    }
 }
 
 @end

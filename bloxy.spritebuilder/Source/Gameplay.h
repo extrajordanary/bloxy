@@ -9,7 +9,7 @@
 #import "CCNode.h"
 #import "LevelData.h"
 #import "Block.h"
-@interface Gameplay : CCNode <CCPhysicsCollisionDelegate>
+@interface Gameplay : CCPhysicsNode <CCPhysicsCollisionDelegate>
 
 
 
