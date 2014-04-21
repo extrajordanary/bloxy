@@ -22,14 +22,11 @@
     if (self)
     {
         self.blockArray = [NSMutableArray array];
-        _droppedBlockArray = [NSMutableArray array];
-        //_blockArraySize = 5;
-        for (int i =0; i<5; i++)
+        self.droppedBlockArray = [NSMutableArray array];
+        for (int i =0; i<7; i++)
         {
             [self addBlock];
         }
-            
-            
             
         return self;
     }
@@ -38,11 +35,11 @@
 }
 -(void) addBlock
 {
-    NSInteger r = arc4random() % 7;
+    NSInteger r = arc4random() % 6;
     //[_blockArray addObject:r];
     switch (r) {
         case 1: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigH"];
+            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectSmV"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
                         break;
@@ -54,24 +51,18 @@
             break;
         }
         case 3: {
-            CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigH"];
-            block.physicsBody.collisionType = @"block";
-            [_blockArray addObject:block];
-            break;
-        }
-        case 4: {
             CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigV"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
-        case 5: {
+        case 4: {
             CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/SquareBig"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
             break;
         }
-        case 6: {
+        case 5: {
             CCSprite *block = (CCSprite *)[CCBReader load:@"ShapeSprites/SquareSm"];
             block.physicsBody.collisionType = @"block";
             [_blockArray addObject:block];
@@ -90,7 +81,7 @@
 {
     CCSprite *sprite = [_blockArray firstObject];
     [_blockArray removeObjectAtIndex:0];
-    while (_blockArray.count < 4)
+    while (_blockArray.count < 7)
         [self addBlock];
     
     return sprite;
@@ -100,13 +91,30 @@
 {
     if (![_droppedBlockArray containsObject:object])
     {
-        [_droppedBlockArray addObject:object];
         CCLOG(@"%i",_droppedBlockArray.count);
+        [_droppedBlockArray addObject:object];
+       
     }
+    
 }
+-(NSMutableArray*) getBlockArray
+{
+    return _blockArray;
+}
+
 -(NSMutableArray*) getDroppedBlockArray
 {
     return _droppedBlockArray;
+}
+
++(id)sharedManager
+{
+    static LevelData *sharedLevel = nil;
+    if (sharedLevel ==nil)
+    {
+        sharedLevel = [[self alloc] init];
+    }
+    return sharedLevel;
 }
 
 @end

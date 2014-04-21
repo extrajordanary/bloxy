@@ -11,6 +11,7 @@
 
 @interface LevelData : CCNode
 
+@property (nonatomic,retain) LevelData *sharedLevelData;
 @property NSInteger blockArraySize;
 @property (nonatomic, strong) NSMutableArray *blockArray;
 @property (nonatomic, strong) NSMutableArray *droppedBlockArray;
@@ -19,4 +20,8 @@
 -(CCSprite*) popBlock;
 -(void) addDroppedBlockArrayObject:(CCSprite *)object;
 -(NSMutableArray*) getDroppedBlockArray;
+-(NSMutableArray*) getBlockArray;
+
++ (id) sharedManager;
 @end
+
