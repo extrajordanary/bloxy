@@ -10,6 +10,8 @@
 
 @implementation Gameplay {
     CCPhysicsNode *_thePhysicsNode;
+    CCNode *_topUI;
+    
     CCNode *_cloud1;
     CCNode *_cloud2;
     CCNode *_cloud3;
@@ -47,12 +49,17 @@
     CGFloat screenWidth;
     CGFloat scrollFactor;
     
-    
-}
+    CGFloat widthOfScreen;
+    CGFloat heightOfScreen;
+    }
 
 -(void) didLoadFromCCB{
     self.userInteractionEnabled = TRUE;
     _levelData = [LevelData sharedManager];
+    
+//    CGSize screenSize = [[[UIScreen mainScreen] bounds] size];
+    widthOfScreen  = [[UIScreen mainScreen] bounds].size.height;;
+    CGFloat heightOfScreen = [[UIScreen mainScreen] bounds].size.width;
     
     //some initialization code
     self.scrollingIncreaseInterval = -5;
@@ -92,6 +99,7 @@
     
     // record the time to measure length of game for score purposes
     scoreTimerStart = [NSDate date];
+    
     [self populateList];
     _blockPreviewArray = [NSMutableArray array];
     _offScreenObstacles = [NSMutableArray array];
@@ -116,8 +124,14 @@
         CCSprite *previewSprite = [CCSprite spriteWithSpriteFrame:blockSpriteFrame];
         previewSprite.scale = 0.2f;
         if (i == 0)
+<<<<<<< HEAD
             previewSprite.scale = 0.4f;
         previewSprite.position =ccp( i * -50 + 300, 450 );
+=======
+            previewSprite.scale = 0.6f;
+//        previewSprite.position =ccp( i * -50 +  widthOfScreen, heightOfScreen - 20 );
+        previewSprite.position =ccp( i * -50 +  300, 500 - 20 );
+>>>>>>> dec60362898829b1adcc3c7a802798d4808eec70
         [_blockPreviewArray addObject:previewSprite];
         
     }
