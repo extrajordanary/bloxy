@@ -124,14 +124,11 @@
         CCSprite *previewSprite = [CCSprite spriteWithSpriteFrame:blockSpriteFrame];
         previewSprite.scale = 0.2f;
         if (i == 0)
-<<<<<<< HEAD
-            previewSprite.scale = 0.4f;
+            previewSprite.scale = 0.25f;
         previewSprite.position =ccp( i * -50 + 300, 450 );
-=======
-            previewSprite.scale = 0.6f;
+            previewSprite.scale = 0.4f;
 //        previewSprite.position =ccp( i * -50 +  widthOfScreen, heightOfScreen - 20 );
-        previewSprite.position =ccp( i * -50 +  300, 500 - 20 );
->>>>>>> dec60362898829b1adcc3c7a802798d4808eec70
+        previewSprite.position =ccp( i * -80 +  290, 550 - 20 );
         [_blockPreviewArray addObject:previewSprite];
         
     }
@@ -238,6 +235,8 @@
         CCLOG(@"GAME OVER");
         [_levelData setScore:
          (NSInteger)[NSNumber numberWithFloat:[scoreTimerStart timeIntervalSinceNow]]];
+        CCScene *gameoverScene = [CCBReader loadAsScene:@"Gameover"];
+        [[CCDirector sharedDirector] replaceScene:gameoverScene];
     }
     
 }

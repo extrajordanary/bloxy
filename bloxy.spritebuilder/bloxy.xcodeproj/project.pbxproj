@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		175813CE190479EF00F88184 /* Obstacles.m in Sources */ = {isa = PBXBuildFile; fileRef = 175813CD190479EF00F88184 /* Obstacles.m */; };
+		175813D21904B31000F88184 /* Gameover.m in Sources */ = {isa = PBXBuildFile; fileRef = 175813D11904B31000F88184 /* Gameover.m */; };
 		17CBDBA21903F0CA0076C371 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBDBA11903F0CA0076C371 /* Gameplay.m */; };
 		17D4688D1903A96900B4CEE7 /* Tri.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D4688C1903A96900B4CEE7 /* Tri.m */; };
 		17D468911903A99300B4CEE7 /* Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468901903A99300B4CEE7 /* Hex.m */; };
@@ -72,6 +73,8 @@
 /* Begin PBXFileReference section */
 		175813CC190479EF00F88184 /* Obstacles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Obstacles.h; path = Source/Obstacles.h; sourceTree = "<group>"; };
 		175813CD190479EF00F88184 /* Obstacles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Obstacles.m; path = Source/Obstacles.m; sourceTree = "<group>"; };
+		175813D01904B31000F88184 /* Gameover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameover.h; path = Source/Gameover.h; sourceTree = "<group>"; };
+		175813D11904B31000F88184 /* Gameover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameover.m; path = Source/Gameover.m; sourceTree = "<group>"; };
 		17CBDBA01903F0CA0076C371 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		17CBDBA11903F0CA0076C371 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		17D4688B1903A96900B4CEE7 /* Tri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tri.h; path = Source/Tri.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				175813D01904B31000F88184 /* Gameover.h */,
+				175813D11904B31000F88184 /* Gameover.m */,
 				17D468A11903BD0800B4CEE7 /* Play.h */,
 				17D468A21903BD0800B4CEE7 /* Play.m */,
 			);
@@ -408,6 +413,7 @@
 				17D468911903A99300B4CEE7 /* Hex.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				3D6231EE1904427D0000B2C1 /* Block.m in Sources */,
+				175813D21904B31000F88184 /* Gameover.m in Sources */,
 				17D4689D1903A9D700B4CEE7 /* SquareBig.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */,
