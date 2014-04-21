@@ -35,7 +35,7 @@
     CCNode *circle3;
     CCNode *circle4;
     CCNode *circle5;
-    NSMutableArray *_obstacles;
+    
     
     NSDate *scoreTimerStart;
     NSTimeInterval scoreTimer;
@@ -65,6 +65,7 @@
     self.scrollingIncreaseInterval = -5;
     self.scrollingCoeficcient = .02;
     self.scrollingCoeficcientIncrease =1.1;
+    self.maxScrollingSpeed = 5;
     _thePhysicsNode.collisionDelegate = self;
     
 //    screenHeight = _thePhysicsNode.contentSizeInPoints.height;
@@ -80,6 +81,7 @@
     _clouds = @[_cloud1, _cloud2, _cloud3, _cloud4, _cloud5, _cloud6, _cloud7,_cloud8,_cloud9, _cloud10, _cloud11];
     
 //    _obstacles = @[circle1, circle2, circle3, triangle1, triangle2, triangle3];
+    _obstacles = [NSMutableArray array];
     [_obstacles addObject:circle1];
     [_obstacles addObject:circle2];
     [_obstacles addObject:circle3];
@@ -100,6 +102,8 @@
     
     [self populateList];
     _blockPreviewArray = [NSMutableArray array];
+    _offScreenObstacles = [NSMutableArray array];
+    _lastPlaced = [NSDate date];
     
     
 }
@@ -120,9 +124,14 @@
         CCSprite *previewSprite = [CCSprite spriteWithSpriteFrame:blockSpriteFrame];
         previewSprite.scale = 0.2f;
         if (i == 0)
+<<<<<<< HEAD
+            previewSprite.scale = 0.4f;
+        previewSprite.position =ccp( i * -50 + 300, 450 );
+=======
             previewSprite.scale = 0.6f;
 //        previewSprite.position =ccp( i * -50 +  widthOfScreen, heightOfScreen - 20 );
         previewSprite.position =ccp( i * -50 +  300, 500 - 20 );
+>>>>>>> dec60362898829b1adcc3c7a802798d4808eec70
         [_blockPreviewArray addObject:previewSprite];
         
     }
@@ -135,13 +144,18 @@
 //
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    CCSprite *sprite = [_levelData popBlock];
-    [self populateList];
-    [_thePhysicsNode addChild:sprite];
-    CGPoint touchPos = [touch locationInNode:self];
-    CGPoint touchWorld = [self convertToWorldSpace:touchPos];
-    CGPoint touchPhysicsNode = [_thePhysicsNode convertToNodeSpace:touchWorld];
-    sprite.position = ccp(touchPhysicsNode.x,touchPhysicsNode.y);
+    
+    if ([[NSDate date] timeIntervalSinceDate:_lastPlaced]>1)
+    {
+        CCSprite *sprite = [_levelData popBlock];
+        [self populateList];
+        [_thePhysicsNode addChild:sprite];
+        CGPoint touchPos = [touch locationInNode:self];
+        CGPoint touchWorld = [self convertToWorldSpace:touchPos];
+        CGPoint touchPhysicsNode = [_thePhysicsNode convertToNodeSpace:touchWorld];
+        sprite.position = ccp(touchPhysicsNode.x,touchPhysicsNode.y);
+        _lastPlaced = [NSDate date];
+    }
 }
 -(void) touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
 {
@@ -160,58 +174,33 @@
     }
     
     _thePhysicsNode.position = ccp(_thePhysicsNode.position.x, _thePhysicsNode.position.y + (delta * self.scrollingCoeficcient));
+    if (_scrollingCoeficcient > _maxScrollingSpeed)
+        _scrollingCoeficcient = _maxScrollingSpeed;
     
-    // place obstacles
-    NSMutableArray *offScreenObstacles = nil;
+    // loop obstacles
+    
     for (CCNode *obstacle in _obstacles) {
-//        CGPoint obstacleWorldPosition = [_thePhysicsNode convertToWorldSpace:obstacle.position];
-//        CGPoint obstacleScreenPosition = [self convertToNodeSpace:obstacleWorldPosition];
-//        if (obstacleScreenPosition.y < -screenHeight) {
-            if (obstacle.position.y < screenHeight/2) {
-            if (!offScreenObstacles) {
-                offScreenObstacles = [NSMutableArray array];
-            }
-            [offScreenObstacles addObject:obstacle];
+     CGPoint obstacleWorldPosition = [_thePhysicsNode convertToWorldSpace:obstacle.position];
+       CGPoint obstacleScreenPosition = [self convertToNodeSpace:obstacleWorldPosition];
+       if (obstacleScreenPosition.y < -screenHeight) {
+          //  if (obstacle.position.y < screenHeight/2) {
+                CCLOG (@"Calling..");
+
+            [_offScreenObstacles addObject:obstacle];
         }
     }
-    for (CCNode *obstacleToRemove in offScreenObstacles) {
+    for (CCNode *obstacleToRemove in _offScreenObstacles) {
         [obstacleToRemove removeFromParent];
         [_obstacles removeObject:obstacleToRemove];
         // for each removed obstacle, add a new one
         [self spawnNewObstacle];
     }
     
-//    timeSinceObstacle = [lastObstacle timeIntervalSinceNow];
-//    if (timeSinceObstacle > obstacleTimer) {
-//        [self addObstacle];
-//        lastObstacle = [NSDate date];
-//        timeSinceObstacle = 0;
-//        obstacleTimer -= 1;
-//    }
-//    if (obstacleCount > 100) {
-//        [self addObstacle];
-//        obstacleCount = 0;
-//    } else {
-//        obstacleCount += 1;
-//    }
-//    scrollFactor += .5;
-    
-    
     // update timer
     scoreTimer = [scoreTimerStart timeIntervalSinceNow];
     
     
-//    // loop the background
-//    for (CCNode *sky in _skys) {
-//        // get the world position of the sky
-//        CGPoint skyWorldPosition = [_thePhysicsNode convertToWorldSpace:sky.position];
-//        // get the screen position of the ground
-//        CGPoint skyScreenPosition = [self convertToNodeSpace:skyWorldPosition];
-//        // if the bottom corner is one complete width off the screen, move it to the top
-//        if (skyScreenPosition.y <= (-1 * sky.contentSize.height)) {
-//            sky.position = ccp(sky.position.x, sky.position.y + 2 * sky.contentSize.height);
-//        }
-//    }
+
     
     // loop the clouds
     for (CCNode *cloud in _clouds) {
@@ -226,19 +215,6 @@
         }
     }
     
-//    // loop the obstacles
-//    for (CCNode *obstacle in _obstacles) {
-//        NSInteger rx = arc4random() % (NSInteger)screenWidth;
-//        NSInteger ry = arc4random() % (NSInteger)screenHeight;
-//        // get the world position
-//        CGPoint obstacleWorldPosition = [_thePhysicsNode convertToWorldSpace:obstacle.position];
-//        // get the screen position
-//        CGPoint obstacleScreenPosition = [self convertToNodeSpace:obstacleWorldPosition];
-//        // if the bottom corner is one complete sky-width off the screen, move it to the top
-//        if (obstacleScreenPosition.y <= (-1 * _thePhysicsNode.contentSize.height) - 50) {
-//            obstacle.position = ccp(rx, obstacle.position.y + 1136 - ry);
-//        }
-//    }
     
     //remove older blocks
     NSMutableArray *arry = [_levelData getDroppedBlockArray];
@@ -260,6 +236,8 @@
     if (allBlocksBelowBottom)
     {
         CCLOG(@"GAME OVER");
+        [_levelData setScore:
+         (NSInteger)[NSNumber numberWithFloat:[scoreTimerStart timeIntervalSinceNow]]];
     }
     
 }
@@ -273,34 +251,6 @@
         return TRUE;
 }
 
-//-(void) addObstacle {
-//    NSInteger rx = arc4random() % (NSInteger)screenWidth;
-//    CCLOG(@"rx %i",rx);
-//    NSInteger ry = arc4random() % (NSInteger)screenHeight/2;
-//    CCLOG(@"ry %i",ry);
-//
-//    NSInteger r = arc4random() % 3;
-//    
-//    switch (r) {
-//        case 1: {
-//            CCSprite *obstacle = (CCSprite *)[CCBReader load:@"ShapeSprites/Tri"];
-//            obstacle.physicsBody.collisionType = @"obstacle";
-//            [_thePhysicsNode addChild:obstacle];
-//            obstacle.position = ccp(rx,ry + screenHeight + scrollFactor);
-//            CCLOG(@"Tri Obstacle");
-//            break;
-//        }
-//        case 2: {
-//            CCSprite *obstacle = (CCSprite *)[CCBReader load:@"ShapeSprites/Circle"];
-//            obstacle.physicsBody.collisionType = @"obstacle";
-//            [_thePhysicsNode addChild:obstacle];
-//            obstacle.position = ccp(rx,ry + screenHeight + scrollFactor);
-//            CCLOG(@"Circle Obstacle");
-//            break;
-//        }
-//    }
-//
-//}
 
 - (void)spawnNewObstacle {
     CCLOG(@"spawning");
@@ -313,7 +263,7 @@
 //        previousObstacleXPosition = firstObstaclePosition;
 //    }
     NSInteger r = arc4random() % 3;
-    CCSprite *obstacle = [[CCSprite init] alloc];
+    CCSprite *obstacle = [[CCSprite alloc] init];
     switch (r) {
         case 1: {
             obstacle = (CCSprite *)[CCBReader load:@"ShapeSprites/Tri"];
