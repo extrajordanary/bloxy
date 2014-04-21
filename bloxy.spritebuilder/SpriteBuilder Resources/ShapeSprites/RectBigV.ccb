@@ -62,11 +62,11 @@
 				</array>
 				<array>
 					<real>100.02734375</real>
-					<real>152.58984375</real>
+					<real>150.18721008300781</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>152.58984375</real>
+					<real>0.80296617746353149</real>
+					<real>150.18721008300781</real>
 				</array>
 			</array>
 		</dict>
@@ -143,6 +143,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>

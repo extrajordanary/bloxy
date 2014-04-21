@@ -53,20 +53,20 @@
 			<key>points</key>
 			<array>
 				<array>
-					<real>0.0</real>
-					<real>0.0</real>
-				</array>
-				<array>
-					<real>99.921875</real>
+					<real>0.48088774085044861</real>
 					<real>0.0</real>
 				</array>
 				<array>
-					<real>99.921875</real>
-					<real>100.81637573242188</real>
+					<real>98.409759521484375</real>
+					<real>0.0</real>
 				</array>
 				<array>
-					<real>0.0</real>
-					<real>100.81637573242188</real>
+					<real>98.409759521484375</real>
+					<real>98.547126770019531</real>
+				</array>
+				<array>
+					<real>0.48088774085044861</real>
+					<real>98.414993286132812</real>
 				</array>
 			</array>
 		</dict>
@@ -143,6 +143,8 @@
 				</array>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
