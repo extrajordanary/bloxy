@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		175813CE190479EF00F88184 /* Obstacles.m in Sources */ = {isa = PBXBuildFile; fileRef = 175813CD190479EF00F88184 /* Obstacles.m */; };
 		17CBDBA21903F0CA0076C371 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 17CBDBA11903F0CA0076C371 /* Gameplay.m */; };
 		17D4688D1903A96900B4CEE7 /* Tri.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D4688C1903A96900B4CEE7 /* Tri.m */; };
 		17D468911903A99300B4CEE7 /* Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D468901903A99300B4CEE7 /* Hex.m */; };
@@ -69,6 +70,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		175813CC190479EF00F88184 /* Obstacles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Obstacles.h; path = Source/Obstacles.h; sourceTree = "<group>"; };
+		175813CD190479EF00F88184 /* Obstacles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Obstacles.m; path = Source/Obstacles.m; sourceTree = "<group>"; };
 		17CBDBA01903F0CA0076C371 /* Gameplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gameplay.h; path = Source/Gameplay.h; sourceTree = "<group>"; };
 		17CBDBA11903F0CA0076C371 /* Gameplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Gameplay.m; path = Source/Gameplay.m; sourceTree = "<group>"; };
 		17D4688B1903A96900B4CEE7 /* Tri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tri.h; path = Source/Tri.h; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 				3D4D355D19036DD40040E81A /* BlockScroller.m */,
 				17CBDBA01903F0CA0076C371 /* Gameplay.h */,
 				17CBDBA11903F0CA0076C371 /* Gameplay.m */,
+				175813CC190479EF00F88184 /* Obstacles.h */,
+				175813CD190479EF00F88184 /* Obstacles.m */,
 				3D8679D81903B2DF00AE8DBE /* LevelData.h */,
 				3D8679D91903B2DF00AE8DBE /* LevelData.m */,
 				3D6231EC1904427D0000B2C1 /* Block.h */,
@@ -406,6 +411,7 @@
 				17D4689D1903A9D700B4CEE7 /* SquareBig.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				3D4D356119036F9E0040E81A /* MiniBlock.m in Sources */,
+				175813CE190479EF00F88184 /* Obstacles.m in Sources */,
 				17D468941903A9A400B4CEE7 /* BigRect.m in Sources */,
 				17D4688D1903A96900B4CEE7 /* Tri.m in Sources */,
 				17D4689A1903A9C900B4CEE7 /* RectMed.m in Sources */,
