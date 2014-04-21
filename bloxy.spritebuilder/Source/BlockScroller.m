@@ -16,11 +16,24 @@
 
 - (void)didLoadFromCCB {
     self.userInteractionEnabled = TRUE;
+
 }
 
 - (void)onEnter {
     [super onEnter];
     self.spacing = 10;
+    _levelData = [LevelData sharedManager];
+    
+    for (int i=0; i <[_levelData getDroppedBlockArray].count; i++) {
+        CCSprite *currentBlock = [[_levelData getDroppedBlockArray] objectAtIndex:i];
+        
+        CCSpriteFrame *blockSpriteFrame = currentBlock.spriteFrame;
+        CCSprite *previewSprite = [CCSprite spriteWithSpriteFrame:blockSpriteFrame];
+        previewSprite.scale = 0.5f;
+        [self addChild:previewSprite];
+        CCLOG(@"%@", currentBlock);
+    }
+
 //    miniBlockArray = [[NSMutableArray alloc] init];
 //    NSInteger xPos = self.boundingBox.size.width +20;
 //    NSInteger xOffset= 50;
@@ -43,13 +56,13 @@
         
 
 
-    for (int i=0; i<2; i++) {
-        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
-        [self addChild:miniBlock];
+//    for (int i=0; i<; i++) {
+//        MiniBlock *miniBlock = (MiniBlock *)[CCBReader load:@"MiniBlock"];
+//        [self addChild:miniBlock];
 //        Blocks *nextBlock = (Blocks *)[CCBReader load:@"SquareSm"];
 //        [self addChild:nextBlock];
         
-    }
+//    }
   
 }
 

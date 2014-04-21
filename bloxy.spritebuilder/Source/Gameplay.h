@@ -24,6 +24,7 @@
 
 
 
+@property (nonatomic, strong) NSMutableArray *blockPreviewArray;
 
 @property (nonatomic, strong) LevelData *levelData;
 @property float scrollDeltaY;

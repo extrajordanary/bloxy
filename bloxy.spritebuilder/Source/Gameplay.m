@@ -37,7 +37,7 @@
 
 -(void) didLoadFromCCB{
     self.userInteractionEnabled = TRUE;
-    _levelData = [[LevelData alloc] init];
+    _levelData = [LevelData sharedManager];
     
     //some initialization code
     self.scrollingIncreaseInterval = -5;
@@ -56,11 +56,44 @@
 - (void)onEnter {
     [super onEnter];
     self.timeStarted = [NSDate date];
+    [self populateList];
+    _blockPreviewArray = [NSMutableArray array];
+    
+    
+}
+
+-(void) populateList
+{
+    for (CCSprite * ccs in _blockPreviewArray)
+    {
+        
+        [self removeChild:ccs];
+        
+    }
+    [_blockPreviewArray removeAllObjects];
+    for (int i=0; i <[_levelData getBlockArray].count-1; i++) {
+        //CCSprite *currentBlock = (CCSprite *)[CCBReader load:@"ShapeSprites/RectBigV"];
+         CCSprite *currentBlock = [[_levelData getBlockArray] objectAtIndex:i];
+        CCSpriteFrame *blockSpriteFrame = currentBlock.spriteFrame;
+        CCSprite *previewSprite = [CCSprite spriteWithSpriteFrame:blockSpriteFrame];
+        previewSprite.scale = 0.2f;
+        if (i == 0)
+            previewSprite.scale = 0.6f;
+        previewSprite.position =ccp( i * -50 + 300, 450 );
+        [_blockPreviewArray addObject:previewSprite];
+        
+    }
+    for (CCSprite * ccs in _blockPreviewArray)
+    {
+        [self addChild:ccs];
+    }
+
 }
 
 - (void) touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
     CCSprite *sprite = [_levelData popBlock];
+    [self populateList];
     [_thePhysicsNode addChild:sprite];
     CGPoint touchPos = [touch locationInNode:self];
     CGPoint touchWorld = [self convertToWorldSpace:touchPos];

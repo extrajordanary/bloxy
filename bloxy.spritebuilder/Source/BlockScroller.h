@@ -17,6 +17,7 @@
 
 
 
+
 @interface BlockScroller : CCLayoutBox {
     NSMutableArray *miniBlockArray;
     
