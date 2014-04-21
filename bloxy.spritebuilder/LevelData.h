@@ -15,6 +15,7 @@
 @property NSInteger blockArraySize;
 @property (nonatomic, strong) NSMutableArray *blockArray;
 @property (nonatomic, strong) NSMutableArray *droppedBlockArray;
+@property  NSInteger score;
 
 -(void) addBlock;
 -(CCSprite*) popBlock;

@@ -15,12 +15,16 @@
 
 
 //scrolling data
+@property float maxScrollingSpeed;
+
 @property float scrollingCoeficcient;
 @property double timeSinceIncrease;
 @property double scrollingIncreaseInterval;
 @property double scrollingCoeficcientIncrease;
 @property NSDate* timeStarted;
-
+@property NSDate* lastPlaced;
+@property (nonatomic, strong) NSMutableArray *offScreenObstacles;
+@property (nonatomic, strong) NSMutableArray *obstacles;
 
 
 
